@@ -111,9 +111,9 @@ const Category: NextPageWithLayout = () => {
 				</div>
 			</Button>
 			<div className='mt-3 lg:mt-5 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 lg:gap-6 lg:gap-y-10'>
-				{data.map((prod, idx) => {
+				{/* {data.map((prod, idx) => {
 					return <CardProduct product={prod} key={idx} />
-				})}
+				})} */}
 			</div>
 			<Pagination
 				total={dummyData.length}
