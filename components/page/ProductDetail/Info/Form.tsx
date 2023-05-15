@@ -16,6 +16,7 @@ import { AttributeListType, SpecialPriceType } from '../../../../types/product'
 import { ButtonHover } from '../../../common/Button'
 import Attribute from '../Attribute'
 import QuantityField from '../QuantityField'
+import { AttributeSetCart } from '../../../../types/user'
 
 type FormProps = {
 	proId: string
@@ -72,7 +73,11 @@ function Form({
 		resolver: yupResolver(schema)
 	})
 
-	const handleAddToCart = async (value: { quantity: number }) => {
+	const handleAddToCart = async (value: {
+		quantity: number
+		price: number
+		attribute: AttributeSetCart[]
+	}) => {
 		if (!user) return router.push('/login')
 
 		setLoading(true)
