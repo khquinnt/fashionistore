@@ -1,0 +1,31 @@
+@tailwind components;
+
+.logo-text {
+	font-family: 'Allerta Stencil', sans-serif;
+}
+
+.line-after:after {
+	content: '';
+	position: absolute;
+	width: 100px;
+	height: 15px;
+	background: transparent;
+	right: -25px;
+	top: 100%;
+}
+
+@layer components {
+	.header-menu {
+		@apply absolute lg:static flex flex-col items-end lg:items-center lg:flex-row lg:self-end top-full bg-slate-50 lg:bg-transparent right-1 rounded min-w-[150px] duration-200 lg:duration-[unset] transition-all ease-in z-[-1] lg:z-auto border-[rgba(0,0,0,.1)] border lg:border-none;
+	}
+
+	.user-menu-list {
+		@apply w-full h-full py-3 lg:px-6 cursor-pointer hover:underline lg:hover:text-white lg:hover:bg-primary flex justify-between lg:justify-start items-center gap-6;
+	}
+	.user-menu-list svg {
+		@apply lg:block p-[3px] lg:p-[2px] stroke-secondary fill-secondary;
+	}
+	.user-menu-list:hover svg {
+		@apply lg:stroke-white lg:fill-white duration-100 ease-linear;
+	}
+}

@@ -1,0 +1,29 @@
+@tailwind components;
+
+.newin-section {
+	@apply mt-[50px] py-10 flex flex-col gap-5 sm:flex-row md:mt-[100px] lg:py-[100px];
+}
+
+.newin-explore {
+	@apply text-center flex flex-col gap-3 sm:self-end lg:min-w-[40%] md:self-center lg:gap-5;
+}
+
+.newin-text {
+	@apply tracking-[.45rem] whitespace-pre-wrap uppercase text-2xl font-[500] lg:text-3xl lg:tracking-[.6rem];
+}
+
+h2.newin-text {
+	@apply text-lg text-primary lg:text-2xl;
+}
+
+.newin-img {
+	@apply h-full relative w-full mx-auto aspect-[3/4] sm:aspect-[9/16] lg:w-[30%] xl:max-h-[600px] 2xl:w-[25%];
+}
+
+.newin-img-top {
+	@apply sm:self-start;
+}
+
+.newin-img-bot {
+	@apply sm:self-start sm:mt-[70px] xl:mt-[100px];
+}

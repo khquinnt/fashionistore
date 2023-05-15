@@ -1,0 +1,14 @@
+{
+	"min-max-first-name": "Firstname must be between 2 and 30 characters long.",
+	"min-max-last-name": "Lastname must be between 2 and 30 characters long.",
+	"cannot-have-special-character": "You can use letters (a-Z), numbers (0-9) and special characters (. - _).",
+	"firstname-required": "Firstname is required.",
+	"lastname-required": "Lastname is required.",
+	"password-rule": "Use 8-40 characters with a mix of letters, numbers & special characters.",
+	"password-cannot-have-space": "Password cannot contain a space.",
+	"password-required": "Password is required.",
+	"phone-required": "Phone number is required.",
+	"phone-invalid": "Invalid phone number.",
+	"retype-password-required": "Confirmation password is required",
+	"incorrect-retype-password": "The password and confirmation password do not match"
+}

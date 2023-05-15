@@ -1,0 +1,40 @@
+.toast+.toast {
+    margin-top: 14px;
+}
+
+#toast-container {
+    transition: transform .6s ease-in-out;
+
+}
+
+.toast {
+    box-shadow: 0 0 4px #999;
+    transition: transform .6s ease-in-out;
+    animation: toast-in-right ease .3s forwards;
+}
+
+.toast:hover {
+    box-shadow: 0 0 8px #999;
+}
+
+@keyframes toast-in-right {
+    from {
+        opacity: 0;
+        transform: translateX(calc(100% + 40px))
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0)
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}

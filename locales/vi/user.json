@@ -1,0 +1,14 @@
+{
+	"min-max-first-name": "Tên phải có 2-30 ký tự.",
+	"min-max-last-name": "Họ phải có 2-30 ký tự.",
+	"cannot-have-special-character": "Bạn có thể dùng các chữ cái (a-Z), số (0-9) và ký tự đặc biệt (. - _).",
+	"firstname-required": "Tên là bắt buộc.",
+	"lastname-required": "Họ là bắt buộc.",
+	"password-rule": "Mật khẩu phải có 8-40 ký tự bao gồm chữ cái (a-Z), số (0-9) và ký tự đặc biệt.",
+	"password-cannot-have-space": "Mật khẩu không chứa khoảng trắng.",
+	"password-required": "Mật khẩu là bắt buộc.",
+	"phone-required": "Số điện thoại là bắt buộc.",
+	"phone-invalid": "Số điện thoại không hợp lệ.",
+	"retype-password-required": "Mật khẩu xác nhận là bắt buộc",
+	"incorrect-retype-password": "Mật khẩu không khớp"
+}

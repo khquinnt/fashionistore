@@ -1,0 +1,25 @@
+.hostest-prod-grid {
+    grid-template-rows: 1fr auto 1fr auto;
+}
+
+.hostest-prod-grid .card-product:nth-child(3n) {
+    grid-column: 1 / -1;
+}
+
+.hostest-prod-grid .card-product:nth-child(3n) .card-prod-img {
+    aspect-ratio: 16/9;
+}
+
+@media screen and (min-width: 768px) {
+    .hostest-prod-grid {
+        grid-template-rows: auto;
+    }
+
+    .hostest-prod-grid .card-product:nth-child(3n) {
+        grid-column: unset;
+    }
+
+    .hostest-prod-grid .card-product:nth-child(3n) .card-prod-img {
+        aspect-ratio: 1/1;
+    }
+}

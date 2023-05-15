@@ -1,0 +1,7 @@
+.accordion-content {
+	transition: all 0.3s linear, padding 0.3s ease;
+}
+
+.accordion-content.hide {
+	max-height: 0 !important;
+}

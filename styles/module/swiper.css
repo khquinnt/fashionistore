@@ -1,0 +1,57 @@
+.swiper-pagination {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 30px;
+}
+
+.swiper-pagination-bullets .swiper-pagination-bullet {
+	padding: 4px;
+	background: white;
+	opacity: 1;
+}
+
+.swiper-pagination .swiper-pagination-bullet-active {
+	color: #fff;
+	padding: 8px;
+	background: transparent !important;
+	border: 2.5px solid white;
+}
+
+.product-carousel .swiper-button-prev,
+.product-carousel .swiper-button-next {
+	color: #a18a68;
+	background-color: rgba(255, 255, 255, 1);
+	border: 0.5px solid white;
+	border-radius: 4px;
+	display: none;
+}
+
+.product-carousel .swiper-button-prev:after,
+.product-carousel .swiper-button-next:after {
+	font-size: 20px;
+	font-weight: 900;
+}
+
+@media screen and (min-width: 768px) {
+	.product-carousel .swiper-button-prev,
+	.product-carousel .swiper-button-next {
+		display: flex;
+	}
+
+	.swiper-vertical .swiper-button-next,
+	.swiper-vertical .swiper-button-prev {
+		left: 50%;
+		transform: rotate(90deg);
+		transform-origin: left center;
+	}
+
+	.swiper-vertical .swiper-button-prev {
+		top: 15px;
+	}
+
+	.swiper-vertical .swiper-button-next {
+		top: auto;
+		bottom: 15px;
+	}
+}
