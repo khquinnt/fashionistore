@@ -6,7 +6,7 @@ const isServer = typeof window === 'undefined'
 export const initiateAxios = () => {
 	axios.defaults.baseURL = process.env.NEXT_PUBLIC_BASE_URL_API
 	axios.defaults.timeout = 60000
-	axios.defaults.withCredentials = true
+	// axios.defaults.withCredentials = true
 
 	if (!isServer) {
 		axios.interceptors.request.use(
